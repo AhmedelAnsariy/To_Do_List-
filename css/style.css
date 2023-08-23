@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #09c;
+}
+
+.myInputs{
+    background-color: #09c;
+
+}
+
+.myTable{
+    background-color: #09c;
+
+}
+
+.title h1{
+    font-style: italic;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    position: relative;
+}
+
+h1::after{
+    position: absolute;
+    content: "";
+    width: 410px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 15px;
+    background-color: white;
+    top: 110%;
+}

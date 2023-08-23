@@ -1,0 +1,80 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="title mt-2">
+        <h1> <i class="fa-solid fa-book me-3"></i> Daily Goal's <i class="fa-solid fa-pen ms-3"></i> </h1>
+    </div>
+
+    <section class="Task mt-3">
+        <div class="container  p-5">
+            <div class="row p-4 bg-white rounded-3">
+                <div class="col-md-6  w-100 rounded-3 myInputs">
+                    <div class="item d-flex justify-content-center align-items-center flex-column">
+
+
+                        <input type="text" class="form-control my-4 w-50" placeholder="Enter your Task" id="taskName">
+                        <input type="text" class="form-control w-50" placeholder="Enter Time Period"    id="taskTime">
+                        <input type="text" class="form-control my-4 w-50" placeholder="Notes . . ?"     id="taskNotes">
+                       
+                        <button class="btn bg-white text-info mb-3"  onclick="AddTask()"> Add Task <i class="fa-solid fa-plus  ms-3"></i> </button>
+
+                        
+                    </div>
+                </div>
+                
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="TasksTables mt-3 ">
+        <div class="clear text-center my-4">
+            <button class="btn btn-danger" onclick="deleteAll()">clear All Tasks <i class="fa-solid fa-trash ms-2"></i> </button>
+        </div>
+<div class="container bg-white p-5 rounded-3">
+    <div class="row p-5 myTable rounded-2">
+        <table class=" table table-hover  rounded-3">
+            <thead class="text-center">
+                <th>Id</th>
+                <th>Task</th>
+                <th>Time</th>
+                <th>Notes</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </thead>
+    
+            <tbody class="text-center" id="demo">
+              
+    
+             
+    
+            </tbody>
+    
+            <tbody></tbody>
+        </table>
+    </div>
+    
+</div>
+    </section>
+
+
+   
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
